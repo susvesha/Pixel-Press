@@ -1,0 +1,147 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f7f8fa;
+  color: #222;
+}
+header {
+  background: linear-gradient(90deg, #4f8cff 0%, #6ed6ff 100%);
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-shadow 0.2s;
+}
+nav a:hover {
+  text-shadow: 0 2px 8px #2222;
+}
+.progress-overview {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.progress-bar {
+  width: 180px;
+  height: 10px;
+  background: #e0e7ef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: #2e7dff;
+  transition: width 0.3s;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.module {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  flex: 1 1 350px;
+  min-width: 320px;
+  margin-bottom: 2rem;
+}
+.module h2 {
+  margin-top: 0;
+  color: #4f8cff;
+}
+.lesson-list {
+  margin-top: 1rem;
+}
+.lesson {
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.lesson.completed {
+  background: #d2f7d2;
+  text-decoration: line-through;
+}
+.lesson .actions {
+  display: flex;
+  gap: 1rem;
+}
+.lesson button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.lesson button:hover {
+  background: #2e7dff;
+}
+.bookmarks {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  min-width: 250px;
+  max-width: 300px;
+  height: fit-content;
+}
+.bookmarks h3 {
+  margin-top: 0;
+  color: #6ed6ff;
+}
+#bookmark-list {
+  list-style: none;
+  padding: 0;
+}
+#bookmark-list li {
+  background: #e0e7ef;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e0e7ef;
+  color: #4f8cff;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .bookmarks {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+}
